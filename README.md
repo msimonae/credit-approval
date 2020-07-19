@@ -1,4 +1,4 @@
-# redit-approval
+# Credit-approval
 
 ## API de aprovação de crédito
 
