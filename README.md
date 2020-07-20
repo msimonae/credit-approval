@@ -165,5 +165,17 @@ DATABASES = {
 ## POST /loan
 ### Este endpoint é responsável por receber as requisições :   
 ### https://credit-approval.herokuapp.com/loan/  
-# Abaixo uma consulta no Postman :
+### Abaixo uma consulta no Postman :
+![Via Postman: Inserindo os dados análise: ](https://github.com/msimonae/credit-approval/blob/master/Arquitetura.jpg)
 
+## Gerou um uuid = b14813c5-5a29-4fd2-af7a-9bf842414e99
+
+## GET /loan/:id
+
+# Este endpoint irá retornar o status atual da solicitação. 
+
+### ttps://credit-approval.herokuapp.com/loan/b14813c5-5a29-4fd2-af7a-9bf842414e99
+
+### Abaixo uma consulta no Postman :
+
+![Via Postman - Consulta de crédito : ](https://github.com/msimonae/credit-approval/blob/master/Arquitetura.jpg)
