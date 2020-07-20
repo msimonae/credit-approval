@@ -101,10 +101,43 @@
 
 - Como este valor é menor que R$ 300, esta será a oferta informada para João: R$ 2.500,00 de empréstimo a serem pagos em 12 vezes de R$ 280,00.
 
+- Taxas de Juros
+- Abaixo estão as taxas de juros mensais praticadas para este desafio. Estas taxas são relacionadas ao score do cliente + a quantidade de parcelas da oferta.
+
+|   Score    | 6 parcelas  | 9 parcelas |12 parcelas |
+| :------------:|:---------------:|:---------------:|:-----:|
+|  900 ou mais  | 3,9% | 4,2% | 4,5% |
+|  800 a 899    | 4,7% | 5,0% | 5,3% |
+|  700 a 799    | 5,5% | 5,8% | 6,1% |
+|  600 a 699    | 6,4% | 6,6% | 6,9% |
+
+
+- Cálculo da Parcela
+- O cálculo da parcela (chamado de PMT) leva em consideração 3 variáveis:
+
+- Valor Presente (PV) - é o valor solicitado pelo cliente
+- Número de parcelas ou períodos (n) - quantidade de parcelas, neste desafio pode ser apenas 6, 9 ou 12.
+- Taxa de juros (i) - a taxa de juros praticada de acordo com a tabela descrita em "Taxas de Juros".
+
 
 ### Requisitos Não funcionais e Técnicos
 - Aplicação desenvolvida em Python 3.8.4, Django 3.0.8 e Django Rest-framework 3.11.0 persistndo em um Sistema Gerenciador de Banco de Dados Postgres 12.3, Redis 5.0.9 como Broker, Celery 4.4.6 com Worker para gerenciar filas de processamento assíncrono e o front-end, um simples Html com ReactJS,JavaScripts e CCS.
 - Infraestrutura na plataforma em nuvem Heroku hospedando os seguintes recursos :
 
+## Tecnologia utilizadas:
+## API Rest 
+### Django  3.0.8  
+### Django Rest-framework  3.11.0
+### Django-filter   3.2.0  
+### Celery  4.4.6  - como Worker
+### Redis  5.0.9 - como Broaker
+### Banco de dados - Postgres 12.3
+## Frontend
+# Html,Javascript, React JS e CCS
+
 ![Arquitetura da Solução](https://github.com/msimonae/credit-approval/blob/master/Arquitetura.jpg)
+
+# Processo de instalação 
+
+## 
 
