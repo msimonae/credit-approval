@@ -61,7 +61,7 @@
 
 - Caso o score do cliente solicitado seja MENOR QUE 600 esta política irá recusar a solicitação.
 
-## Política de Comprometimento
+### Política de Comprometimento
 
 - A idéia do comprometimento de renda está em saber se o cliente conseguirá honrar com o pagamento da parcela, mediante o uso atual da renda.
 
@@ -120,24 +120,50 @@
 - Taxa de juros (i) - a taxa de juros praticada de acordo com a tabela descrita em "Taxas de Juros".
 
 
-### Requisitos Não funcionais e Técnicos
+# Requisitos Não funcionais e Técnicos
 - Aplicação desenvolvida em Python 3.8.4, Django 3.0.8 e Django Rest-framework 3.11.0 persistndo em um Sistema Gerenciador de Banco de Dados Postgres 12.3, Redis 5.0.9 como Broker, Celery 4.4.6 com Worker para gerenciar filas de processamento assíncrono e o front-end, um simples Html com ReactJS,JavaScripts e CCS.
 - Infraestrutura na plataforma em nuvem Heroku hospedando os seguintes recursos :
 
 ## Tecnologia utilizadas:
-## API Rest 
+## Backend - API Restfull
 ### Django  3.0.8  
 ### Django Rest-framework  3.11.0
 ### Django-filter   3.2.0  
 ### Celery  4.4.6  - como Worker
 ### Redis  5.0.9 - como Broaker
 ### Banco de dados - Postgres 12.3
+
 ## Frontend
-# Html,Javascript, React JS e CCS
+### Html,Javascript, React JS e CCS
 
 ![Arquitetura da Solução](https://github.com/msimonae/credit-approval/blob/master/Arquitetura.jpg)
 
 # Processo de instalação 
 
-## 
+## git clone https://github.com/msimonae/credit-approval.git
+## Instalar o Python 3.8.4 - https://www.python.org/downloads/
+## pip install -r requirements.txt , onde requirements.txt localizado na raiz do projeto
+## Instalar Redis local - https://redis.io/download ou Heroku veja como instalar no site do Heroku - https://devcenter.heroku.com/categories/heroku-redis
+## Instalar o Postgres 12.3 - local https://www.postgresql.org/download/ 
+### Alterar o arquivo setting.py para :
+DATABASES = {
+        'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'NOME DA BASE',
+        'USER': 'USUARIO',
+        'PASSWORD': 'SENHA',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
+    }
+
+}
+
+### Confirar no Heroku - https://devcenter.heroku.com/categories/heroku-postgres
+
+# Testar as APIs 
+
+## POST /loan
+### Este endpoint é responsável por receber as requisições :   
+### https://credit-approval.herokuapp.com/loan/  
+# Abaixo uma consulta no Postman :
 
