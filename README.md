@@ -162,6 +162,8 @@ DATABASES = {
 
 ### Confirar no Heroku - https://devcenter.heroku.com/categories/heroku-postgres
 
+## Inciar o Celey com o comando : celery -A api worker -l info
+
 # Testar as APIs 
 
 ## POST /loan
