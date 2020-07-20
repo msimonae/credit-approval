@@ -136,6 +136,8 @@
 ## Frontend
 ### Html,Javascript, React JS e CCS
 
+## Arquitetura da Solução
+
 ![Arquitetura da Solução](https://github.com/msimonae/credit-approval/blob/master/Arquitetura.jpg)
 
 # Processo de instalação 
@@ -166,7 +168,7 @@ DATABASES = {
 ### Este endpoint é responsável por receber as requisições :   
 ### https://credit-approval.herokuapp.com/loan/  
 ### Abaixo uma consulta no Postman :
-![Via Postman: Inserindo os dados análise: ](https://github.com/msimonae/credit-approval/blob/master/Arquitetura.jpg)
+![Via Postman: Inserindo os dados análise: ](https://github.com/msimonae/credit-approval/blob/master/1.png)
 
 ## Gerou um uuid = b14813c5-5a29-4fd2-af7a-9bf842414e99
 
@@ -178,4 +180,4 @@ DATABASES = {
 
 ### Abaixo uma consulta no Postman :
 
-![Via Postman - Consulta de crédito : ](https://github.com/msimonae/credit-approval/blob/master/Arquitetura.jpg)
+![Via Postman - Consulta de crédito : ](https://github.com/msimonae/credit-approval/blob/master/2.png)
