@@ -181,3 +181,13 @@ DATABASES = {
 ### Abaixo uma consulta no Postman :
 
 ![Via Postman - Consulta de crédito : ](https://github.com/msimonae/credit-approval/blob/master/2.png)
+
+# Melhorias futuras
+## Estou criando o frontend em HTML, ReactJS, Javascript e CSS
+## Módulos de cadastro, pesquisa e futuramente um módulo admistrativa com painel com gráficos de aprovações e reprovações 
+## Veja o repositório : https://github.com/msimonae/frontend-credit-approval.git
+## Criar um módulo API de Chatbot para interface com usuário para cadastro e integração com API de reconhecimento de imagens (OCR) de documentos 
+## Futuras refatorações no código
+
+# Marcelo Simonae
+
